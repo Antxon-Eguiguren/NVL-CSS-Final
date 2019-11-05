@@ -1,0 +1,150 @@
+<!-- Ejercicio de práctica del módulo 2 CSS - Práctica Final
+
+En esta práctica final te vamos a pedir que diseñes una página web compuesta por tres columnas. En la primera de ellas, te vamos a pedir que introduzcas una serie de enlaces que representarán un menú de opciones. Más bien representarán unos anclas a los contenidos de la columna central.
+En la columna central, vamos a incluir un listado de posts de un blog ficticio. Con cada post, tendrás que jugar con todos los detalles en las tipografías, en la disposición, en el layout, en los márgenes. No sólo pienses técnicamente, piensa en los detalles y en cómo replicar con éxito la estructura. Identifica y haz las relaciones oportunas con los conceptos aprendidos.
+
+En la tercera columna, volvemos a poner referencias a posts, en este caso destacados. Esta vez, la disposición de estos cambia. Intenta identificar la mejor manera de realizar la composición estructural con HTML + CSS.
+
+No te olvides del header y el footer. Créalos teniendo en cuenta el orden de representación. Incluye logos, copyrights como símbolos, etc. Todo lo que se te ocurra y que nos demuestre que controlas completamente todo lo que te hemos expuesto.
+
+Es un ejercicio recopilatorio y sobre todo de detalle. Aquí es donde realmente marcarás la diferencia entre estar preparado para afrontar los módulos avanzados o no (y sólo hablo ahora de los de HTML5 y CSS Avanzado).
+
+Demuestra, dedícale -al menos- el tiempo estipulado por nosotros y sobre todo, diviértete con tus nuevos conocimientos si es que aún no los poseías.
+
+Si te sobra tiempo, detalla, detalla y detalla. Cuantos más detalles y más problemas resuelvas, más pistas nos das para valorar tu práctica. -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,500,600,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>El Blog de Antxon</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<header>
+		<div class="cabecera">
+			<h1 class="titulo">El Blog de Antxon</h1>
+		</div>
+	</header>
+	<hr class="separador">
+	<main>
+		<div class="contenedor-principal">
+			<div class="columna-izquierda">
+				<h3>Menú Principal</h3>
+				<hr class="separador"><br>
+				<a id="escalada" href="#seccion-escalada">Escalada</a><br><br>
+				<a id="ciclismo" href="#seccion-ciclismo">Ciclismo</a><br><br>
+				<a id="padel" href="#seccion-padel">Pádel</a>
+			</div>
+			<div class="columna-central">
+				<div class="escalada">
+					<a name="seccion-escalada"><h2>Todo Acerca de la Escalada en Roca</h2></a>
+					<div class="post">
+						<h3>Jesús Muñoz ‘Chuchi’ hace la primera repetición de ‘El dorado’ 9a con “alegría, satisfacción… y alivio”</h3>
+						<p>Por Antxon Eguiguren - 05/11/2019</p>
+						<iframe width="600" height="400" src="https://www.youtube.com/embed/nxO14A1uQ9s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<p>El escalador salmantino encadena su vía más dura, después de años dedicado prácticamente en exclusiva al bloque. Hablamos con él acerca de esta línea de La Pedriza y de su práctica escaladora en general.</p>
+						<a class="enlace" href="">Leer más...</a>
+						<hr class="separador">
+					</div>
+					<div class="post">
+						<a name="caidas-escalada"><h3>Cómo superar el miedo a las caídas en escalada</h3></a>
+						<p>Por Antxon Eguiguren - 05/11/2019</p>
+						<img src="images/caidas-escalada.jpg" width="600">
+						<p>La segunda temporada de la serie de vídeos de entrenamiento para escalada The Process, presentada por el escalador Robbie Phillips, se centra en los aspectos mentales. El primer capítulo está dedicado a uno de los factores que más bloquean a los escaladores a la hora de progresar y mejorar: el miedo a las caídas.</p>
+						<a class="enlace" href="">Leer más...</a>
+						<hr class="separador">
+					</div>
+					<div class="post">
+						<h3>Entrenamiento para escalada: pautas para alcanzar tus objetivos</h3>
+						<p>Por Antxon Eguiguren - 05/11/2019</p>
+						<img src="images/entrenamiento-escalada.jpg" width="600">
+						<p>En este artículo el entrenador Marco Jubes define los aspectos fundamentales para trabajar a lo largo del año en función de los objetivos propuestos, bien en roca o en competición. Se dirige sobre todo a los entrenadores que tengan a su cargo a un grupo de alumnos, si bien también puede ser de utilidad para los escaladores individuales.</p>
+						<a class="enlace" href="">Leer más...</a>
+						<hr class="separador">
+					</div>
+				</div>
+				<div class="ciclismo">
+					<a name="seccion-ciclismo"><h2>Todo Acerca del Ciclismo en Carretera</h2></a>
+					<div class="post">
+						<h3>5 Consejos Esenciales de Iniciación al Entrenamiento Ciclista</h3>
+						<p>Por Antxon Eguiguren - 05/11/2019</p>
+						<iframe width="600" height="400" src="https://www.youtube.com/embed/r4yE8BoogCE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<p>Conseguiremos mejorar y nos engancharemos más a la bici e igual conseguimos hacer sufrir a nuestros compañeros de grupeta. Debemos adaptarnos a nuestro nivel y de ahí ir progresando. Agradecemos a todos los que nos habéis propuesto hacer este video en los comentarios, como por ejemplo a Mr Eminem. Asi que, aqui lo teneis y no dudéis en dejarnos vuestras dudas sobre este video y hacernos más propuestas! </p>
+						<a class="enlace" href="">Leer más...</a>
+						<hr class="separador">
+					</div>
+					<div class="post">
+						<a name="froome"><h3>Chris Froome: "No hay garantía de que regrese a mi nivel anterior"</h3></a>
+						<p>Por Antxon Eguiguren - 05/11/2019</p>
+						<img src="images/froome.jpg" width="600">
+						<p>Cuatro meses y medio después de sufrir un grave accidente mientras reconocía el circuito de la contrarreloj del Criterium du Dauphiné -que le provocó numerosas fracturas de fémur, cadera, costillas y codo, además de una lesión en el cuello- el británico Chris Froome volvió a vestirse ayer domingo con el maillot del Team Ineos para participar en la contrarreloj por equipos -de 3,1 km- del Criteium de Saitama (Japón), no competitivo.</p>
+						<a class="enlace" href="">Leer más...</a>
+						<hr class="separador">
+					</div>
+					<div class="post">
+						<h3>Milan-San Remo 2019 Highlights | Cycling | Eurosport</h3>
+						<p>Por Antxon Eguiguren - 05/11/2019</p>
+						<iframe width="600" height="400" src="https://www.youtube.com/embed/NECr3ZQL1Z4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<p>Highlights from the 2019 Milan-San Remo.</p>
+						<a class="enlace" href="">Leer más...</a>
+						<hr class="separador">
+					</div>
+				</div>
+				<div class="padel">
+					<a name="seccion-padel"><h2>Todo Acerca del Mundo del Pádel</h2></a>
+					<div class="post">
+						<h3>Resumen Final Triay/Sainz Vs Mapi/Majo Santander WOpen 2019 | World Padel Tour</h3>
+						<p>Por Antxon Eguiguren - 05/11/2019</p>
+						<iframe width="600" height="400" src="https://www.youtube.com/embed/rQnwnMbdcBY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<p>Superan a Mapi y Majo en la gran final del Santander WOpen por 6-2 / 6-7 / 6-4. </p>
+						<a class="enlace" href="">Leer más...</a>
+						<hr class="separador">
+					</div>
+					<div class="post">
+						<h3>El partido de los puntazos | Cervezas Victoria Marbella Master 2019</h3>
+						<p>Por Antxon Eguiguren - 05/11/2019</p>
+						<iframe width="600" height="400" src="https://www.youtube.com/embed/x9iDnwFTaOc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<p>El enfrentamiento en cuartos entre ambas parejas fue un auténtico espectáculo.</p>
+						<a class="enlace" href="">Leer más...</a>
+						<hr class="separador">
+					</div>
+					<div class="post">
+						<h3>El partido más épico de Bela | World Padel Tour</h3>
+						<p>Por Antxon Eguiguren - 05/11/2019</p>
+						<iframe width="600" height="400" src="https://www.youtube.com/embed/J49oS6f4Muc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<p>El argentino se puso la capa de superhéroe con su compañero lesionado, para llevar el partido al tiebreak.</p>
+						<a class="enlace" href="">Leer más...</a>
+					</div>
+				</div>
+			</div>
+			<div class="columna-derecha">
+				<div class="mejores-posts">
+					<h3>Los Artículos Más Visitados</h3>
+					<hr class="separador"><br>
+					<div>
+						<img src="images/caidas-escalada.jpg" width="100" height="100"><br>
+						<a class="enlace" href="#caidas-escalada">Cómo superar el miedo a las caídas en escalada</a><br><br>
+					</div>
+					<div>
+						<img src="images/froome.jpg" width="100" height="100"><br>
+						<a class="enlace" href="#froome">Chris Froome: "No hay garantía de que regrese a mi nivel anterior"</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<hr class="separador">
+		<h3>Suscríbete a nuestra newsletter</h3>
+		<input type="text" id="campo" name="email" placeholder="hola@ejemplo.com">
+		<input type="submit" id="boton" name="suscribete" value="Suscríbete">
+	</footer>
+</body>
+</html>
+
+
+
+
